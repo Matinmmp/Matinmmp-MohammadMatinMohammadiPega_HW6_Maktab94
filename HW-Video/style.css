@@ -1,0 +1,175 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: #fff;
+    font-family: sans-serif;
+    background-color: rgb(37, 37, 37);
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.btn-purchase {
+    padding: .5rem .7rem;
+    border-radius: 1rem;
+    background-color: rgb(0, 0, 72);
+}
+
+.container {
+    margin: 0 auto;
+    padding: 1rem;
+    max-width: 1300px;
+}
+
+.title {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.title h1 {
+    font-size: 2.5rem;
+}
+
+#video-section {
+    width: 100%;
+    height: 500px;
+    margin-top: 1rem;
+}
+
+.video-container {
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+    border: .3rem solid #fff;
+    border-radius: 1rem;
+    background: rgb(37, 37, 37);
+    background: linear-gradient(180deg, rgba(37, 37, 37, 1) 0%, rgba(17, 17, 17, 1) 60%, rgba(0, 0, 0, 1) 100%);
+}
+
+.video-container video {
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem;
+}
+
+.filters-container {
+    display: flex;
+    padding-top: 4rem;
+    padding-bottom: 3rem;
+    gap: 1rem;
+    border-bottom: 2px solid #505050;
+}
+
+.input-controls {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.input-controls label {
+    font-size: .8rem;
+    margin-bottom: .5rem;
+}
+
+.input-controls select {
+    padding: .5rem;
+    color: #505050;
+    outline: none;
+}
+
+.input-controls button {
+    padding: .5rem;
+    outline: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    background-color: rgb(0, 109, 212);
+    transition: transform .1s ease-in-out;
+}
+
+.input-controls button:active {
+    transform: scale(.99);
+  
+}
+
+.pruduct-cintainer {
+    padding-block: 3rem;
+}
+
+.pruduct-featurs {
+    display: flex;
+    justify-content: space-around;
+}
+
+.pruduct-featurs span {
+    flex: 1;
+    text-align: center;
+    font-size: .8rem;
+}
+
+.pruduct-featurs span:first-child,
+.pruduct-featurs span:nth-child(2),
+.pruduct-featurs span:last-child {
+    flex: 2;
+}
+
+.product-list {
+    background-color: rgba(37, 37, 37, 0.207);
+
+}
+
+.product-list .product {
+    height: 8rem;
+    margin-top: 1rem;
+    cursor: pointer;
+    box-shadow: 0px 0px 5px rgb(63, 63, 63);
+    background-color: rgb(37, 37, 37);
+    transition: transform .1s ease-in-out;
+}
+
+.product-list .product:active {
+    transform: scale(.99);
+}
+
+.product-body {
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.product-body div {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: .8rem;
+}
+
+.product-body div:first-child,
+.product-body div:nth-child(2),
+.product-body div:last-child {
+    flex: 2;
+}
+
+.product-body .product-img {
+    width: 100%;
+    height: 100%;
+}
+
+.product-img img {
+    width: 70%;
+    height: 70%;
+}
