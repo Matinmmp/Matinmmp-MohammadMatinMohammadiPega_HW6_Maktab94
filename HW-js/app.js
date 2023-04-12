@@ -69,3 +69,20 @@
 
 // let arr = ["nap", "teachers", "cheaters", "PAN", "ear", "era", "hectares"];
 // console.log(aclean2(arr));
+
+
+
+//  Q5
+
+let map = new Map();
+map.set("name", "John");
+let keys = map.keys();
+// Error: keys.push is not a function
+// keys.push("more");
+
+
+/// Answer : becuase map.keys() just return an itrable of keys not an array
+
+let keys2 = [...map.keys()];
+keys2.push("more");
+console.log(keys2);
