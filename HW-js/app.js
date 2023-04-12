@@ -48,9 +48,24 @@
 
 // Q3
 
-function unique(arr) {
-    return Array.from(new Set(arr));
-}
+// function unique(arr) {
+//     return Array.from(new Set(arr));
+// }
 
-const values = ["Hare", "Krishna", "Hare", "Krishna", "Krishna", "Krishna", "Hare", "Hare", ":-O"];
-console.log(unique(values)); // Hare, Krishna, :-O
+// const values = ["Hare", "Krishna", "Hare", "Krishna", "Krishna", "Krishna", "Hare", "Hare", ":-O"];
+// console.log(unique(values)); // Hare, Krishna, :-O
+
+
+//  Q4
+
+// function aclean2(arr) {
+//     const map = new Map();
+//     for (const word of arr) {
+//         const sorted = word.toLowerCase().split('').sort().join('');
+//         map.set(sorted, word);
+//     }
+//     return [...map.values()];
+// }
+
+// let arr = ["nap", "teachers", "cheaters", "PAN", "ear", "era", "hectares"];
+// console.log(aclean2(arr));
