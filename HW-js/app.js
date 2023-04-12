@@ -27,19 +27,19 @@
 // Q2
 
 
-const makeFlat = arr => {
-    let numbers = [];
-    for (let i = 0; i < arr.length; i++) {
-        if (Array.isArray(arr[i]))
-            numbers = numbers.concat(makeFlat(arr[i]));
-        else
-            numbers.push(arr[i]);
-    }
-    return numbers;
-}
+// const makeFlat = arr => {
+//     let numbers = [];
+//     for (let i = 0; i < arr.length; i++) {
+//         if (Array.isArray(arr[i]))
+//             numbers = numbers.concat(makeFlat(arr[i]));
+//         else
+//             numbers.push(arr[i]);
+//     }
+//     return numbers;
+// }
 
-const sort = arr => {
-    return arr.sort((a, b) => a - b).reverse();
-}
+// const sort = arr => {
+//     return arr.sort((a, b) => a - b).reverse();
+// }
 
-console.log(sort(makeFlat([1, 2, [6, 7, 8, 9], 3, 4, 5, [1, 2, 3, [23, 54, 66, -1, -12]]])));
+// console.log(sort(makeFlat([1, 2, [6, 7, 8, 9], 3, 4, 5, [1, 2, 3, [23, 54, 66, -1, -12]]])));
