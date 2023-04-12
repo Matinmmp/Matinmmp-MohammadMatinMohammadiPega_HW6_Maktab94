@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,10 +8,82 @@
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
+
 <body>
-    
+
+    <div class="container">
+
+        <section class="box-form">
+
+            <header class="header">
+                <h1>Student Registration Form</h1>
+            </header>
+
+            <form action="#">
+                <div class="input-control">
+                    <label for="">Firstname</label>
+                    <input type="text" placeholder="Firstname" id="firstName" required>
+                </div>
+                <div class="input-control">
+                    <label for="">Middlename:</label>
+                    <input type="text" placeholder="Middlename" id="middleName" required>
+                </div>
+                <div class="input-control">
+                    <label for="">Lastname:</label>
+                    <input type="text" placeholder="Lastname" id="lastName" required>
+                </div>
+                <div class="input-control display-block">
+                    <label>Course :</label>
+                    <select id="course">
+                        <option>React</option>
+                        <option>Anguar</option>
+                        <option>Vue</option>
+                        <option>Asp</option>
+                    </select>
+                </div>
+                <div class="input-control display-block">
+                    <label>Gender :</label>
+                    <div>
+                        <label><input type="radio" name="gender" value="male" checked> Male</label>
+                        <label><input type="radio" name="gender" value="female"> Female</label>
+                        <label><input type="radio" name="gender" value="other"> Other</label>
+                    </div>
+                </div>
+                <div class="input-control phones">
+                    <label>Phone:</label>
+                    <span class="preNumber">+91</span>
+                    <input type="text" id="phone1" required>
+                </div>
+                <div class="input-control">
+                    <input type="text" id="phone2" placeholder="phone no" required>
+                </div>
+
+                <div class="input-control">
+                    <label> Current Address : </label>
+                    <textarea id="address" cols="20" rows="5" placeholder=" Current Address" required></textarea>
+                </div>
+                <div class="input-control bold">
+                    <label>Email</label>
+                    <input type="email" placeholder="Enter Email" id="email" required>
+                </div>
+
+                <div class="input-control bold">
+                    <label>Password</label>
+                    <input type="password" placeholder="Enter Password" id="password" required>
+                </div>
+                <div class="input-control bold">
+                    <label>Re-type Password</label>
+                    <input type="password" placeholder="Retype Password" id="password2" required>
+                </div>
+                <button id="register">Register</button>
+            </form>
+        </section>
+
+    </div>
+
 
 
     <script src="app.js"></script>
 </body>
+
 </html>
